@@ -1,17 +1,28 @@
-<!DOCTYPE html> 
-<html> 
-<body> 
 
-<video width="400" controls>
-  <source src="mov_bbb.mp4" type="video/mp4">
-  <source src="mov_bbb.ogg" type="video/ogg">
-  Your browser does not support HTML video.
-</video>
 
-<p>
-Video courtesy of 
-<a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
-</p>
-
-</body> 
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<title>SAPUI5 Walkthrough</title>
+		<script
+			id="sap-ui-bootstrap"
+			src="/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-modules="sap.m.library"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="async" >
+		</script>
+		<script>
+			sap.ui.getCore().attachInit(function () {
+				new sap.m.Text({
+					text : "OpenUI5 is loaded successfully!"
+				}).placeAt("content");
+			});
+		</script>
+	</head>
+	<body class="sapUiBody" id="content">
+	</body>
 </html>
+
